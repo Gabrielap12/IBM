@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/bootstrap-grid.css">
+<link rel="stylesheet" href="css/bootstrap-reboot.css">
+  <link rel="stylesheet" href="css/teste.css">
+
+</head>
+<body>
+
+<div class="container">
+  <h2>Modal Example</h2>
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div id="chatApp" >
+        <div class="chatBox" id="chatBox">
+        <div class="card">
+            <div id="contorno">
+       <header class="card-header header-title" @click="toggleChat()">
+          <p class="card-header-title">
+            <i class="fa fa-circle is-online"></i>
+            <img src="img/logo1.png" style="width: 30px; padding-top: 13px">
+            <div class="title-chat">Teacher Chatbot</div>
+          </p>
+          <a class="card-header-icon">
+            <span class="icon">
+              <i class="fa fa-close"></i>
+            </span>
+          </a>
+        </header>
+       
+              <div id="chatbox-area" >
+                      <div class="chat-content">
+                        <div class="content">
+                          <div class="chat-message-group1">
+                            <div class="chat-messages">
+                              <div class="message">Olá, em que posso te ajudar?</div>
+                              <div class="from">Hoje 04:55</div>
+                            </div>
+                          </div>
+                          <div class="chat-message-group writer-user">
+                            <div class="chat-messages">
+                              <div class="message">Olá, tenho algumas dúvidas sobre matemática</div>
+                              <div class="from">Hoje 04:56</div>
+                            </div>
+                          </div>
+                          <div class="chat-message-group">
+                            <div class="chat-messages">
+                              <div class="message">Sobre qual conteúdo?</div>
+                              <div class="from">Hoje 04:56</div>
+                            </div>
+                          </div>
+                          <div class="chat-message-group writer-user">
+                            <div class="chat-messages">
+                              <div class="message">Sobre funções</div>
+                              <div class="from">Hoje 04:57</div>
+                            </div>
+                          </div>
+                          <div class="chat-message-group">
+                            <div class="chat-messages">
+                              <div class="message">E qual é sua dúvida?</div>
+                              <div class="from">Hoje 04:57</div>
+                            </div>
+                          </div>
+                          <div class="chat-message-group writer-user">
+                            <div class="chat-messages">
+                              <div class="message">Não sei a fórmula</div>
+                              <div class="from">Hoje 04:58</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+       </div>
+          <hr width="85%" align="center"/>
+              <footer class="card-footer" id="chatBox-textbox"> 
+                      <div style="width: 100% " > 
+                          <form  action='/' method='post'>
+                              <div class="chat-camp">
+                                  <textarea placeholder="Digite sua mensagem" name="Message" id="message" cols="100" rows="5"></textarea>
+                                  <button class="botao1"><img src="img/send.png" /></button>
+                                  <button class="botao2"><img src="img/mic.png" /></button>
+                              </div>
+                            </form>
+                      </div>
+          <div class="has-text-centered" style="width: 37%">
+            <a class="button is-white">
+              <i class="fa fa-smile-o fa-5" aria-hidden="true"></i>
+            </a>
+          </div>
+        </footer>
+        </div>
+      </div>
+      </div>
+      <div class="emojiBox">
+        <div class="box">
+        
+        </div>
+      </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</body>
+</html>
