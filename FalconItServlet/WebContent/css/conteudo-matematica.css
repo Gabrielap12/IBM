@@ -1,0 +1,177 @@
+img {
+  display: block;
+  margin: auto;
+}
+
+table {
+  cellpadding: 10px;
+  width: 100%;
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 5px;
+  clear: both;
+}
+
+#chatbot {
+  display: none;
+  margin-left: 80%;
+  margin-top: 100px;
+  position: fixed;
+  z-index: 1;
+}
+
+.mic-pq {
+  display: none;
+}
+
+#voltar-ao-topo {
+  margin-top: 600px;
+  position: fixed;
+  bottom: 2em;
+  right: 2em;
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  padding: 1em;
+}
+
+@media (max-width: 850px) {
+  #chatbot {
+    display: none;
+    margin-left: 10%;
+    margin-top: 100px;
+    position: fixed;
+  }
+
+  .mic-pq {
+  }
+}
+/*ChatBot*/
+/*ChatBot header Inicio*/
+#header-chat{
+  float: left;
+  width: 50%;
+}
+#desc-header{
+  font-size: 12.5px;
+  padding-top: 3%;
+  float: left;
+  width: 50%;
+}
+/*ChatBot header Fim*/
+/*ChatBot Conteudo inicio*/
+.chat-content{
+  overflow: auto;
+  height: 300px;
+}
+.chat-message-group1 .chat-messages{
+  float: left;
+  width: 80%;
+  margin-bottom: 5px;
+  margin-top: 4px;
+}
+.chat-message-group1 .message{
+  float: left;
+  padding: 10px;
+  background: #ecf1f8;
+  font-size: 13px;
+  border-radius: 5px;
+  margin-bottom: 3px;
+}
+.chat-messages {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.chat-message-group1 .chat-messages{
+  float: left;
+  width: 80%;
+  margin-bottom: 5px;
+  margin-top: 4px;
+}
+.chat-message-group .chat-messages{
+  float: left;
+  width: 80%;
+  margin-bottom: 5px;
+}
+.chat-messages .from{
+  float: left;
+  display: block;
+  width: 100%;
+  text-align: left;
+  font-size: 11px;
+}
+.writer-user .chat-messages{
+  float: right;
+  width: 80%;
+}
+.writer-user .chat-messages .message{
+  float: right;
+  background: #3399ff;
+  color: black;
+}
+.writer-user .chat-messages .from{
+  float: left;
+  display: block;
+  width: 100%;
+  text-align: right;
+}
+#contorno{
+  border: 1px solid black;
+  display: table;
+  width: 100%;
+}
+.writer-user .chat-messages{
+  float: right;
+  width: 80%;
+}
+.writer-user .chat-messages .message{
+  float: right;
+  background: #3399ff;
+  color: #FFF;
+}
+.writer-user .chat-messages .from{
+  float: left;
+  display: block;
+  width: 100%;
+  text-align: right;
+}
+/*ChatBot Conteudo fim*/
+/*ChatBot barra inicio*/
+.chat-camp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.chat-camp textarea {
+  width: 90%;
+  resize: none;
+  border-color: #3399ff;
+  border-radius: 10px;
+  outline: none;
+  color: #333;
+  padding: 10px 20px 20px;
+  transition: all 300ms ease;
+}
+
+.chat-camp textarea:focus,
+.chat-camp textarea:active {
+  border-color: #3399ff;
+  transform: scale(1.01);
+}
+
+.chat-camp button {
+  display: block;
+  margin-left: 7px;
+  background-color: #3399ff;
+  box-shadow: 0 0 2px #333;
+  padding: 0px 5px;
+  border-radius: 10px;
+}
+/*ChatBot barra fim*/
